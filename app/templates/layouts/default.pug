@@ -5,14 +5,13 @@ html(lang="ru")
 		include ../partials/head
 		title #{page.title} | Sitename
 	body
-		include ../partials/header
+		main.main
+			block content
 
-		.wrapper
-			main.main
-				block content
-
+		footer.footer
 			include ../partials/footer
 
-			// END OF VISIBLE CONTENT
 
-			// Write invisible content here
+		// END OF VISIBLE CONTENT
+
+		// Write invisible content here
