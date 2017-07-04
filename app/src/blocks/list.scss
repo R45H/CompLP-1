@@ -1,0 +1,22 @@
+.list {
+	list-style-type: none;
+	padding: 0;
+
+	&__item {
+		position: relative;
+		padding-left: 1em;
+		margin-bottom: .2em;
+		line-height: 1;
+
+		&::before {
+			content: '';
+			width: .41666666em;
+			height: .41666666em;
+			background: $color-main;
+			border-radius: 50%;
+			position: absolute;
+			left: 0;
+			top: .35em;
+		}
+	}
+}
