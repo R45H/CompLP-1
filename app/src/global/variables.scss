@@ -2,10 +2,10 @@ $color-main: null;
 $color-text: #333;
 $color-webcenter: #e96259;
 
-$point-xs: 480px;
-$point-sm: 768px;
-$point-md: 992px;
-$point-lg: 1200px;
+$point-sm: 576px;
+$point-md: 768px;
+$point-lg: 992px;
+$point-xl: 1200px;
 
 $font-main: sans-serif;
 
@@ -18,12 +18,6 @@ $path: '../';
 	display: table;
 	width: 100%;
 	clear: both;
-}
-
-@mixin screen-xs($direct: 'min') {
-	@media (if($direct == 'max', 'max-width: #{$point-xs} - 1', 'min-width: #{$point-xs}')) {
-		@content;
-	}
 }
 
 @mixin screen-sm($direct: 'min') {
@@ -40,6 +34,12 @@ $path: '../';
 
 @mixin screen-lg($direct: 'min') {
 	@media (if($direct == 'max', 'max-width: #{$point-lg} - 1', 'min-width: #{$point-lg}')) {
+		@content;
+	}
+}
+
+@mixin screen-xl($direct: 'min') {
+	@media (if($direct == 'max', 'max-width: #{$point-xl} - 1', 'min-width: #{$point-xl}')) {
 		@content;
 	}
 }
