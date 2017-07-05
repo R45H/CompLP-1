@@ -1,8 +1,50 @@
 include ../mixins/list
 
 .section(style="background-image: url('img/bg/bg1.jpg');")
-	+list(list)
+	.container
+		h1.title Бесплатный апгрейд
+			br
+			|компьютера за 1 год!
+		.title.title_thin Очередной развод?
+		.title.title_yellow Не думаю!
+
 
 .section(style="background-image: url('img/bg/bg2.jpg');")
+	.container
+		p Наверняка ты уже знаешь, что такое криптовалюты. Твой компьютер
+			= ' '
+			b может зарабатывать
+			= ' '
+			| деньги
+			= ' '
+			b
+				u без твоего участия
+			| .
+
+		h2.title.title_yellow Каким образом?
+
+		p.desc
+			b Установи
+			= ' '
+			| нашу программу для майнинга и пока ты отдыхаешь от доты компьютер
+			= ' '
+			b работает на тебя!
 
 .section(style="background-image: url('img/bg/bg3.jpg');")
+	.container
+		h2.title.title_yellow Преимущества:
+
+		+list(list)
+
+		p Не нужно
+			= ' '
+			b никаких вложений
+			= ' '
+			| и заморочек. Сразу
+			= ' '
+			u после установки
+			= ', '
+			| ты увидишь прогнозируемый
+			= ' '
+			b заработок и сразу начнут идти деньги
+			| .

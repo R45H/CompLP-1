@@ -1,13 +1,13 @@
 {
 	"list": [
 		{
-			"text": "lorem lorem lorem lorem lorem"
+			"text": "Программа работает в автоматическом режиме;"
 		},
 		{
-			"text": "lorem lorem lorem lorem lorem"
+			"text": "Программу не надо включать и выключать;"
 		},
 		{
-			"text": "lorem lorem lorem lorem lorem"
+			"text": "Сама переходит в спящий режим."
 		}
 	]
 }

@@ -1,0 +1,16 @@
+.title {
+	font-size: 5.4rem;
+	margin: 1.3em 0;
+	font-family: $font-bold;
+	line-height: 1.2;
+
+	&_yellow {
+		color: $color-main;
+	}
+
+	&_thin {
+		font-family: $font-main;
+		font-size: 4.9rem;
+		font-weight: 300;
+	}
+}
