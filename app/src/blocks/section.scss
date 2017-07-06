@@ -44,6 +44,13 @@
 		opacity: .75;
 	}
 
+	&__next {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		bottom: 15px;
+	}
+
 	&__mb_5 {
 		margin-bottom: 5em;
 	}
