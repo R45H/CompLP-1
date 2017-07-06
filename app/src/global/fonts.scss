@@ -81,3 +81,19 @@
 	font-weight: 700;
 	font-style: italic;
 }
+
+@font-face {
+	font-family: 'exo2';
+	src: url($path + 'fonts/exo2/exo2-black.woff2') format('woff2'),
+	url($path + 'fonts/exo2/exo2-black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'exo2';
+	src: url($path + 'fonts/exo2/exo2-blackitalic.woff2') format('woff2'),
+	url($path + 'fonts/exo2/exo2-blackitalic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}

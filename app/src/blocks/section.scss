@@ -3,4 +3,63 @@
 	background: no-repeat 50% 50%;
 	background-size: cover;
 	overflow: hidden;
+	padding: 1.875em 0;
+	position: relative;
+
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 4px;
+		width: 100%;
+		background: black;
+	}
+
+	&::before {
+		top: 0;
+		border-bottom: 1px solid $color-main;
+	}
+
+	&::after {
+		bottom: 0;
+		border-top: 1px solid $color-main;
+	}
+
+	&:first-child {
+
+		&::before {
+			display: none;
+		}
+	}
+
+	&__left-space-sm {
+
+		@include screen-sm() {
+			padding-left: 2em;
+		}
+	}
+
+	&__img-right {
+		opacity: .75;
+	}
+
+	&__mb_5 {
+		margin-bottom: 5em;
+	}
+
+	&__abs-img {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		max-width: 45%;
+	}
+
+	&_space_2x {
+		padding: 3.75em 0;
+	}
+
+	&_space_3x {
+		padding: 5.625em 0;
+	}
 }

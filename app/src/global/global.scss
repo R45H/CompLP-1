@@ -36,6 +36,25 @@ hr {
 	margin: 0;
 }
 
+img {
+	max-width: 100%;
+}
+
 ::selection {
 
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.flex-justify-center-sm {
+
+	@include screen-sm() {
+
+	}
 }

@@ -2,16 +2,24 @@ include ../mixins/list
 
 .section(style="background-image: url('img/bg/bg1.jpg');")
 	.container
+		.logo
+			img(src="img/logo.svg")
 		h1.title Бесплатный апгрейд
 			br
 			|компьютера за 1 год!
-		.title.title_thin Очередной развод?
-		.title.title_yellow Не думаю!
+		.row
+			.col-sm-6
+				.title.title_thin.title_druzhko Очередной развод?
+			.col-sm-6.text-right
+				.title.title_yellow.title_kiselev Не думаю!
 
 
-.section(style="background-image: url('img/bg/bg2.jpg');")
+.section.section_space_2x(style="background-image: url('img/bg/bg2.jpg');")
 	.container
-		p Наверняка ты уже знаешь, что такое криптовалюты. Твой компьютер
+		p.text-center Наверняка ты уже знаешь, что такое криптовалюты.
+			img.bitcoin-img(src="img/bitcoin.svg")
+			br
+			| Твой компьютер
 			= ' '
 			b может зарабатывать
 			= ' '
@@ -21,30 +29,42 @@ include ../mixins/list
 				u без твоего участия
 			| .
 
-		h2.title.title_yellow Каким образом?
+		img.section__abs-img(src='img/img-1.png')
 
-		p.desc
-			b Установи
-			= ' '
-			| нашу программу для майнинга и пока ты отдыхаешь от доты компьютер
-			= ' '
-			b работает на тебя!
+		h2.title.title_yellow.title_space_2x.text-center Каким образом?
 
-.section(style="background-image: url('img/bg/bg3.jpg');")
+		.row
+			.col-sm-8
+				p.desc
+					b Установи
+					= ' '
+					| нашу программу для майнинга и, пока ты отдыхаешь от доты, компьютер
+					= ' '
+					b работает на тебя!
+
+.section.section_space_3x(style="background-image: url('img/bg/bg3.jpg');")
 	.container
-		h2.title.title_yellow Преимущества:
+		img.section__abs-img(src='img/img-3.png')
 
-		+list(list)
+		.row.section__mb_5
+			.col-sm-5
+				img(src='img/img-2.png')
 
-		p Не нужно
-			= ' '
-			b никаких вложений
-			= ' '
-			| и заморочек. Сразу
-			= ' '
-			u после установки
-			= ', '
-			| ты увидишь прогнозируемый
-			= ' '
-			b заработок и сразу начнут идти деньги
-			| .
+			.col-sm-7.section__left-space-sm
+				h2.title.title_yellow.title_space-top_0 Преимущества:
+				+list(list)
+
+		.row
+			.col-sm-8
+				p Не нужно
+					= ' '
+					b никаких вложений
+					= ' '
+					| и заморочек. Сразу
+					= ' '
+					u после установки
+					= ', '
+					| ты увидишь прогнозируемый
+					= ' '
+					b заработок и сразу начнут идти деньги
+					| .

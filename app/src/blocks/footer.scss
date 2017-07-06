@@ -1,6 +1,19 @@
 .footer {
-	min-height: 50vh;
+	min-height: 70vh;
 	background: no-repeat 50% 50%;
 	background-size: cover;
 	overflow: hidden;
+	padding: 3.75em 0;
+	position: relative;
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 4px;
+		width: 100%;
+		background: black;
+		top: 0;
+		border-bottom: 1px solid $color-main;
+	}
 }

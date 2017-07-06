@@ -3,6 +3,7 @@
 	margin: 1.3em 0;
 	font-family: $font-bold;
 	line-height: 1.2;
+	position: relative;
 
 	&_yellow {
 		color: $color-main;
@@ -12,5 +13,45 @@
 		font-family: $font-main;
 		font-size: 4.9rem;
 		font-weight: 300;
+	}
+
+	&_space_2x {
+		margin: 2.6em 0;
+	}
+
+	&_space-top_0 {
+		margin-top: 0;
+	}
+
+	&_druzhko {
+		position: relative;
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 144px;
+			height: 146px;
+			background: url($path + 'img/sticker-druzhko.png') no-repeat;
+			position: absolute;
+			right: 100%;
+			top: 50%;
+			margin-top: -73px;
+		}
+	}
+
+	&_kiselev {
+		position: relative;
+
+		&::after {
+			content: '';
+			display: inline-block;
+			width: 159px;
+			height: 144px;
+			background: url($path + 'img/sticker-kiselev.png') no-repeat;
+			position: absolute;
+			left: 100%;
+			top: 50%;
+			margin-top: -72px;
+		}
 	}
 }

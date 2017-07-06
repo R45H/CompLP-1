@@ -1,0 +1,26 @@
+.btn {
+	background: $color-main;
+	display: inline-block;
+	font-family: $font-bold;
+	font-size: 3.2rem;
+	color: black;
+	text-decoration: none;
+	padding: .46875em 1.875em;
+	border-radius: 5px;
+	line-height: 1;
+	border: none;
+	border-bottom: 4px solid $color-main-dark;
+	outline: none;
+	cursor: pointer;
+	transition: $duration ease background;
+
+	&:hover {
+		background: lighten($color-main, 20%);
+	}
+
+	&:active {
+		border-bottom-width: 0;
+		margin-top: 4px;
+	}
+}
+
