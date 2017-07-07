@@ -1,9 +1,9 @@
 .section {
-	min-height: 100vh;
+	//min-height: 100vh;
 	background: no-repeat 50% 50%;
 	background-size: cover;
 	overflow: hidden;
-	padding: 1.875em 0;
+	//padding: 1.875em 0;
 	position: relative;
 
 	&::before,
@@ -11,6 +11,7 @@
 		content: '';
 		display: block;
 		position: absolute;
+		left: 0;
 		height: 4px;
 		width: 100%;
 		background: black;
@@ -31,6 +32,13 @@
 		&::before {
 			display: none;
 		}
+	}
+
+	&__logo {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 3em;
 	}
 
 	&__left-space-sm {
@@ -63,10 +71,10 @@
 	}
 
 	&_space_2x {
-		padding: 3.75em 0;
+		//padding: 3.75em 0;
 	}
 
 	&_space_3x {
-		padding: 5.625em 0;
+		//padding: 5.625em 0;
 	}
 }

@@ -1,9 +1,11 @@
 include ../mixins/list
 
-.section(style="background-image: url('img/bg/bg1.jpg');")
-	.container
+.section.fullpage__section(style="background-image: url('img/bg/bg1.jpg');")
+	.container.section__logo
 		.logo
 			img(src="img/logo.svg")
+
+	.container
 		h1.title Бесплатный апгрейд
 			br
 			|компьютера за 1 год!
@@ -15,7 +17,7 @@ include ../mixins/list
 	.section__next
 		.next-slide
 
-.section.section_space_2x(style="background-image: url('img/bg/bg2.jpg');")
+.section.fullpage__section.section_space_2x(style="background-image: url('img/bg/bg2.jpg');")
 	.container
 		p.text-center Наверняка ты уже знаешь, что такое криптовалюты.
 			img.bitcoin-img(src="img/bitcoin.svg")
@@ -45,7 +47,7 @@ include ../mixins/list
 	.section__next
 		.next-slide
 
-.section.section_space_3x(style="background-image: url('img/bg/bg3.jpg');")
+.section.fullpage__section.section_space_3x(style="background-image: url('img/bg/bg3.jpg');")
 	.container
 		img.section__abs-img(src='img/img-3.png')
 

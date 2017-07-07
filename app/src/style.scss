@@ -8,7 +8,8 @@
 @import url('blocks/logo.scss'); // Лого
 @import url('blocks/bitcoin-img.scss'); // Картинка биткоина
 @import url('blocks/btn.scss'); // Кнопка
-@import url('blocks/next-slide.scss'); // Кнопка перелистывания на следующий слайд
+@import url('blocks/next-slide/next-slide.scss'); // Кнопка перелистывания на следующий слайд
+@import url('blocks/fullpage/fullpage.scss'); // Постраничный скролл
 
 @import url('blocks/main.scss'); // Контейнер контента
 @import url('blocks/section.scss'); // Контейнер секции

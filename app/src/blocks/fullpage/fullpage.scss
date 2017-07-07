@@ -1,0 +1,36 @@
+.fullpage {
+
+	.fp-scroller {
+		min-height: 100%;
+	}
+}
+
+#fp-nav {
+
+	&.right {
+		right: 0;
+	}
+
+	ul {
+
+		li {
+			margin: 0;
+			width: auto;
+			height: auto;
+
+			a {
+				display: block;
+				padding: 15px 30px;
+
+				.active {
+
+				}
+
+				span {
+					left: 15px;
+					background: $color-main;
+				}
+			}
+		}
+	}
+}

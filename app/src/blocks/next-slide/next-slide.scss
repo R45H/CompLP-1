@@ -1,0 +1,29 @@
+.next-slide {
+	cursor: pointer;
+	padding: 1em 2em;
+	display: inline-block;
+
+	&::after {
+		content: '';
+		display: block;
+		border-top: 32px solid $color-main;
+		border-left: 28px solid transparent;
+		border-right: 28px solid transparent;
+		transition: $duration ease border;
+		position: relative;
+	}
+	
+	&:hover {
+		
+		&::after {
+			border-top-color: lighten($color-main, 20%);
+		}
+	}
+
+	&:active {
+
+		&::after {
+			top: 4px;
+		}
+	}
+}
